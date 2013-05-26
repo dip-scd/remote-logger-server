@@ -1,0 +1,15 @@
+How to use:
+
+1) Make sure you have App Engine SDK and Python installed
+
+2) Create google app using google apps console.
+
+2) Put your app ID (you specified it during app creation) in the APP_NAME variable in the deploy.py file
+
+3) go to the project root and deploy project using:
+
+	python deploy.py release
+
+4) Put your app ID into the D.SERVER_URL static field in the D.java file of the client library. Check How to use.txt file in the root of the client library folder.
+
+5) Now you can go to the <your_app_id>.appspot.com to check if it deployed and works.
