@@ -32,13 +32,6 @@ var UpdatesUtils = {
 	  	DataManager.onUpdate(update)
 	  }
 	},
-
-	onUpdateBalance : function() {
-	  	ServerInteractionUtils.getBalanceFromServer(function(balance, recent_units) {
-	  		UIUtils.setBalance(balance)
-	  		ClientUtils.getCurrentUser().recent_units = recent_units
-	  	});
-	},
 	
 	channelOpenLoop : function() {
 		UpdatesUtils.openChannel();
